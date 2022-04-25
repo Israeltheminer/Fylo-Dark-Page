@@ -1,4 +1,4 @@
-# Flyo-Curved-Landing-Page
+# Flyo-Dark-Landing-Page
 
 Code Challenge by Code Mentor coded by Iyanda Israel
 
