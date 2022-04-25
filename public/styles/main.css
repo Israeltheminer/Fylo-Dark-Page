@@ -1,0 +1,21 @@
+@import url(/public/styles/top-container.css);
+@import url(/public/styles/middle-container.css);
+@import url(/public/styles/bottom-container.css);
+
+body{
+   font-size: 1.1rem;
+   font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4{
+   font-weight: 700;
+   font-family: 'Raleway', sans-serif;
+}
+h1{
+   font-size: 2.5rem;
+}
+h3{
+   font-size: 1.5rem;
+}
+h2{
+   font-size: 2rem;
+}

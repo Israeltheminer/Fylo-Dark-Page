@@ -1,0 +1,49 @@
+.top_container{
+   background-color: hsl(217, 28%, 15%);
+   color: #fff;
+   padding: 4rem 6%;
+   text-align: center;
+   background-image: url(/public/images/bg-curvy-desktop.svg);
+   background-repeat: no-repeat;
+   background-position:bottom;
+   background-size: 99.9% 35%;
+}
+
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+nav > .nav_links > a{
+   margin: auto 2rem;
+}
+.first_page{
+   margin-bottom: 5rem;
+}
+.first_page_image{
+   display: flex;
+   justify-content: center;
+}
+.first_page_text{
+   margin-top: 3rem;
+}
+
+.first_page_text > h1 {
+   display: block;
+   max-width: 50rem;
+   display: inline-block;
+   margin:  1rem auto;
+}
+
+.first_page_text > p {
+   max-width: 37.5rem;
+   display: block;
+   margin: 1rem auto;
+   line-height: 1.5;
+}
+.top_button{
+   background-color: hsl(198, 60%, 50%);
+   padding: 0.75rem 5rem;
+   border-radius: 40px;
+   margin: 1rem auto;
+}
