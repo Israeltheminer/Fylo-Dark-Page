@@ -1,7 +1,3 @@
-@import url(/public/styles/top-container.css);
-@import url(/public/styles/middle-container.css);
-@import url(/public/styles/bottom-container.css);
-
 body{
    font-size: 1.1rem;
    font-family: 'Open Sans', sans-serif;
