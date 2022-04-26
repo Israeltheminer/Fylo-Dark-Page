@@ -17,6 +17,9 @@ nav{
 nav > .nav_links > a{
    margin: auto 2rem;
 }
+nav > .nav_links > a:hover{
+   font-weight: 800;
+}
 .first_page{
    margin-bottom: 5rem;
 }
@@ -46,4 +49,43 @@ nav > .nav_links > a{
    padding: 0.75rem 5rem;
    border-radius: 40px;
    margin: 1rem auto;
+}
+@media(max-width: 700px){
+   .top_container{
+      background-image: url(/public/images/bg-curvy-mobile.svg);
+      background-size: 100%;
+      padding-bottom: 2rem;
+   }
+   .first_page{
+      margin-bottom: 0;
+   }
+   nav > .nav_links > a{
+      margin: auto 1rem;
+   }
+}
+@media(max-width: 515px){
+   nav > .nav_links > a{
+      margin: auto 0.5rem;
+   }
+   nav > div:nth-of-type(1){
+      width: 8rem;
+   }
+}
+@media(max-width: 400px){
+   nav > .nav_links > a{
+      margin: auto 0.3rem;
+      font-size: 0.7rem;
+   }
+   nav > div:nth-of-type(1){
+      width: 8rem;
+   }
+}
+@media(max-width: 350px){
+   nav > .nav_links > a{
+      margin: auto 0.2rem;
+      font-size: 0.6rem;
+   }
+   nav > div:nth-of-type(1){
+      width: 7rem;
+   }
 }
