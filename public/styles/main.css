@@ -19,3 +19,45 @@ h3{
 h2{
    font-size: 2rem;
 }
+
+button:hover{
+   background-color: hsl(176, 68%, 64%);
+}
+@media(max-width: 775px) {
+   body{
+      font-size: 0.9rem;
+   }
+   h1{
+      font-size: 2.1rem;
+   }
+   h3{
+      font-size: 1.3rem;
+   }
+   h2{
+      font-size: 1.7rem;
+   }
+}
+
+@media (max-width: 500px) {
+   h1{
+      font-size: 1.7rem;
+   }
+   h2{
+      font-size: 1.5rem;
+   }
+   body{
+      font-size: 0.85rem;
+   }
+}
+
+@media (max-width: 350px) {
+   h1{
+      font-size: 1.3rem;
+   }
+   h2{
+      font-size: 1.2em;
+   }
+   body{
+      font-size: 0.8rem;
+   }
+}

@@ -3,6 +3,7 @@
    padding: 0 8%;
    color: #fff;
    font-size: 0.9rem;
+   border: none;
 }
 .features_grid{
    display: grid;
@@ -44,6 +45,10 @@
 }
 .arrow_link{
    text-decoration: underline;
+   color: hsl(176, 68%, 64%);
+}
+.arrow_link:hover{
+   color: #fff;
 }
 .testimonials{
    display: grid;
@@ -88,14 +93,15 @@
 .sign_up_form{
    display: flex;
    width: 90%;
+   margin: auto;
+   gap: 1rem;
 }
 .email_input{
-   width: 60%;
-   padding: 0.75rem;
+   min-width: 60%;
    border-radius: 40px;
-   margin-right: 1rem;
    color: rgba(0, 0, 0, 0.627);
    outline: none;
+   min-height: 3rem;
 }
 .bottom_error{
    text-align: left;
@@ -109,4 +115,117 @@
    background-color: hsl(198, 60%, 50%);
    padding: 0.75rem 4rem;
    border-radius: 40px;
+}
+
+@media (max-width: 1200px){
+   .features_grid{
+      max-width: 85%;
+      column-gap: 5rem;
+   }
+   .third_page_text{
+      width: 100%;
+   }
+   .testimonials{
+      grid-template-columns: 1fr 1fr;
+   }
+   .testimonials > div:nth-of-type(3){
+      grid-column: 1 / 3;
+      min-width: 55%;
+      max-width: 55%;
+      justify-self: center;
+   }
+}
+
+@media (max-width: 970px){
+   .features_grid{
+      grid-template-columns: 1fr;
+   }
+   .features_grid > div {
+      max-width: 25rem;
+      justify-self: center;
+   }
+   .third_page_grid{
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 6rem;
+      margin-top: 3rem;
+   }
+   .third_page_grid > div{
+      width: 80%;
+   }
+   .third_page_text > h1{
+      margin: 0 auto;
+   }
+}
+
+@media(max-width: 875px){
+   .testimonials{
+      grid-template-columns: 1fr;
+      column-gap: 0;
+   }
+   .testimonials > div { 
+      grid-column: 1;
+      max-width: 80%;
+      justify-self: center;
+   }
+   .testimonials > div:nth-of-type(3) { 
+      max-width: 80%;
+   }
+   .sign_up_form{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      justify-content: center;
+      max-width: 70%;   
+   }
+   .bottom_card{
+      padding: 2rem 1.3rem;
+   }
+}
+
+@media(max-width: 515px){
+   .testimonials > div {
+      max-width: 90%;
+   }
+   .testimonials > div:nth-of-type(3) { 
+      max-width: 90%;
+   }
+   .middle_container{
+      font-size: 0.8rem;
+   }
+   .email_input{
+      min-height: 2rem;
+   }
+   .bottom_button{
+      padding: 0.5rem 4rem;
+   }
+   .profile_name{
+      font-size: 0.7rem;
+   }
+}
+
+@media(max-width: 400px){
+   .testimonials > div {
+      max-width: 95%;
+   }
+   .testimonials > div:nth-of-type(3) { 
+      max-width: 95%;
+   }
+   .third_page_text > h1{
+      margin: auto;
+      width: 100%;
+   }
+   .bottom_card{
+      padding: 2rem 1rem;
+   }
+   .middle_container{
+      font-size: 0.7rem;
+   }
+   .sign_up_form{
+      max-width: 80%;
+   }
+   .profile{
+      padding-top: 2rem;
+      padding-bottom: 1.5rem;
+   }
 }
